@@ -17,29 +17,28 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="body">
-    <div class="topnav" id="myTopnav">
-      <a href="index.html" class="active">Home</a>
-      <div class="topnav-right">
-        <a href="#news">News</a>
-        <a href="contact.html">Contact</a>
-        <a href="#about">About</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+  <div>
+    <header class="header background-nav container-fluid full-width-div">
+      <a class="logo" href=".page-top">ARC RENTALS</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html" class="link link-theme link-arrow active">Home</a></li>
+        <li><a href="#two" class="link link-theme link-arrow">Service</a></li>
+        <li><a href="#three" class="link link-theme link-arrow">About Us</a></li>
+        <li><a href="contact.html" class="link link-theme link-arrow">Contact</a></li>
+      </ul>
+    </header>
+  </div>
   
-      <script>
-        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-      </script>
+  <script>
+    $('a').click(function(e){
+        e.preventDefault();
+        $('body, html').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top - 120
+        }, 1000);
+    });
+  </script>
   
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

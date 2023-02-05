@@ -21,19 +21,21 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="body">
-  <div class="topnav" id="myTopnav">
-    <a href="index.html" id="home-button">Home</a>
-    <div class="topnav-right">
-      <a href="#news">News</a>
-      <a href="contact.html" class="active">Contact</a>
-      <a href="#about">About</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
 
-  <div class="container contact-form">
+  <nav class="header background-nav full-width-div sticky-top">
+    <a class="logo" href=".page-top">ARC RENTALS</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="index.html" class="link link-theme link-arrow active">Home</a></li>
+      <li><a href="#two" class="link link-theme link-arrow">Service</a></li>
+      <li><a href="#three" class="link link-theme link-arrow">About Us</a></li>
+      <li><a href="contact.html" class="link link-theme link-arrow">Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <div class="container container2" id="contact-form">
     <form target="_blank" action="https://formsubmit.co/jutelifu@mailgolem.com" method="POST">
 
         <label for="email" id="contact-title">Email</label>
@@ -51,7 +53,7 @@
         <input type="submit" value="Submit">
     
       </form>
-    </div>
+  </div>
 
     <script>
       /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
