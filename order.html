@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!--Link to the icon library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--Links to fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto&display=swap" rel="stylesheet">
+
+  <!--Link to style sheet-->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="body">
+
+  <nav class="header background-nav full-width-div sticky-top">
+    <a class="logo" href=".page-top">ARC RENTALS</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn">
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="index.html" class="link link-theme link-arrow active">Home</a></li>
+      <li><a href="#two" class="link link-theme link-arrow">Service</a></li>
+      <li><a href="#three" class="link link-theme link-arrow">About Us</a></li>
+      <li><a href="contact.html" class="link link-theme link-arrow">Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <div class="container container2" id="contact-form">
+    <form target="_blank" action="https://formsubmit.co/jutelifu@mailgolem.com" method="POST">
+        <h3>Rental Rates</h3>
+        <ul>
+            <li>$35 base rate per day (weekday)</li>
+            <li>$45 base rate per day (weekend)</li>
+            <li>$25 per day (renting for one week straight)</li>
+            <li>$20 per day (renting for two weeks straight)</li>
+          </ul>
+
+        <label for="email" id="contact-title">Email</label>
+        <input type="email" name="email" class="form-control" id="fname" name="firstname" placeholder="example@email.com" required>
+
+        <label for="phone-number" id="contact-title">Phone Number</label>
+        <input type="text" class="form-control" id="phone-number" name="phone-number" placeholder="" required>
+
+        <label for="fname" id="contact-title">First Name</label>
+        <input type="text" class="form-control" id="fname" name="firstname" placeholder="" required>
+    
+        <label for="lname" id="contact-title">Last Name</label>
+        <input type="text" class="form-control" id="lname" name="lastname" placeholder="" required>
+
+        <label for="insurance" id="contact-title">Does the driver have their own insurance? (Don't worry if they don't! You can buy insurance from us for an extra $10.)</label>
+        <input type="text" class="form-control" id="insurance" name="insurance" placeholder="yes/no" required>
+
+        <label for="renter-age" id="contact-title">Is the renter over 21 years old?</label>
+        <input type="text" class="form-control" id="renter-age" name="renter-age" placeholder="yes/no" required>
+
+        
+        <label for="license" id="contact-title">Does the driver have a US driver's license?</label>
+        <input type="text" class="form-control" id="license" name="license" placeholder="yes/no" required>
+
+        <label for="start-date" id="contact-title">Start date?</label>
+        <input type="text" class="form-control" id="start-date" name="start-date" placeholder="mm/dd/yyyy" required>
+
+        <label for="end-date" id="contact-title">Return date?</label>
+        <input type="text" class="form-control" id="end-date" name="end-date" placeholder="mm/dd/yyyy" required>
+
+        <label for="license" id="contact-title">Do you want your car to be delivered? (extra $7)</label>
+        <input type="text" class="form-control" id="license" name="license" placeholder="yes/no" required>
+
+        <label for="comment" id="contact-title">Anything you want to add?</label>
+        <input type="text" class="form-control" id="comment" name="comment" placeholder="">
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+  </div>
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
