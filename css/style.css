@@ -341,19 +341,17 @@ a::after {
   background-position: center;
   background-size: cover;
   row-gap: 4rem;
-
   text-align: center;
 }
-
 
 .parallax-container2 {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 6rem 0;
   background-image: url("/images/main-page-background.jpg");
+  gap: 1.6em;
   background-color: grey;
   background-blend-mode:multiply;
-  gap: 1.6em;
 }
 
 .buffer {
@@ -373,7 +371,6 @@ a::after {
   background: #222433;
   text-align: center;
   text-decoration: none;
-
 }
 
 .book-now-btn:hover {
