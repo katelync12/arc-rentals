@@ -331,7 +331,9 @@ a::after {
 
 .parallax-container {
   display: flex;
-  min-height: 90vh;
+  min-height: 85vh;
+  width: 100%;
+  height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -343,15 +345,19 @@ a::after {
   row-gap: 4rem;
   text-align: center;
 }
+/* 
+    flex-direction: row;
+    flex-wrap: wrap;
 
+*/
 .parallax-container2 {
-  flex-direction: row;
-  flex-wrap: wrap;
   padding: 6rem 0;
-  background-image: url("../img/main-page-background.jpg");
+  background-image: url("../img/main-page-background-cropped.jpg");
   gap: 1.6em;
   background-color: grey;
   background-blend-mode:multiply;
+  width: 100%;
+  height: auto;
 }
 
 .buffer {
@@ -360,24 +366,57 @@ a::after {
   background-color: #222433;
 }
 
-.book-now-btn {
-  display: block;
-  color: #c36dce;
-  width:100px;
-  border-radius: 10em;
-  height:50px;
-  border: 2px solid #222433;
-  outline: none;
-  background: #222433;
+.home-btn {
   text-align: center;
+  vertical-align: middle;
+  color: black;
+  width:150px;
+  height: 50px;
+  border-radius: 10em;
+  border: 2px solid black;
+  outline: none;
+  background: #ddd;
+  cursor: pointer;
   text-decoration: none;
 }
 
-.book-now-btn:hover {
+.home-btn:hover {
   border: 2px solid #c36dce;
 }
 
 .home-heading {
   color: white;
-  font-size: 6em;
+  font-size: 7em;
+  font-weight: 600;
+  position: relative;
+  bottom: 50px;
+}
+
+@media (max-width: 875px) {
+  .home-heading {
+    font-size: 5em;
+  }
+}
+
+.home-page-text {
+  font-size: 2em;
+  color: white;
+  margin: 2em;
+}
+
+.home-subtext {
+  font-size: 2em;
+  color: white;
+  justify-content: left; 
+}
+
+.footer {
+  min-height: 30vh;
+  background-color: #18191F;
+}
+.footer-btn {
+  display: block;
+  background: none;
+  color: #c36dce;
+
 }
