@@ -282,7 +282,7 @@ a::after {
   .link:active,
   .link:focus,
   .link:hover {
-    outline: 0
+    outline: 0;
   }
   
   .link:before {
@@ -322,6 +322,14 @@ a::after {
   background-color: #18191F;
 }
 
+
+@media (max-width: 875px) {
+  .nav-color:hover {
+    text-decoration: none;
+    color: #f690d1; 
+  }
+}
+
 .full-width-div {
   position: absolute;
   width: 100%;
@@ -345,11 +353,7 @@ a::after {
   row-gap: 4rem;
   text-align: center;
 }
-/* 
-    flex-direction: row;
-    flex-wrap: wrap;
 
-*/
 .parallax-container2 {
   padding: 6rem 0;
   background-image: url("../img/main-page-background-cropped.jpg");
@@ -389,6 +393,7 @@ a::after {
   font-size: 7em;
   font-weight: 600;
   position: relative;
+  top: 50px;
   bottom: 50px;
 }
 
