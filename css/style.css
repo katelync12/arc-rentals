@@ -330,7 +330,7 @@ a::after {
 @media (max-width: 875px) {
   .nav-color:hover {
     text-decoration: none;
-    color: #f690d1; 
+    color: #c197eb; 
   }
 }
 
