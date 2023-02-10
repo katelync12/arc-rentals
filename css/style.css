@@ -520,4 +520,24 @@ img {
 .rounded:hover {
   opacity: 0.8;
 }
+
+.book-btn {
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  width:150px;
+  height: 50px;
+  border-radius: 10em;
+  border: 2px solid black;
+  outline: none;
+  background: #dddddd;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.book-btn:hover {
+  background: #c7d9f6;
+}
 /* End of styling fleet images */
