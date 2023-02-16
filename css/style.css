@@ -362,10 +362,9 @@ a::after {
 
 .parallax-container2 {
   padding: 6rem 0;
-  background-image: url("../img/main-page-background-cropped.jpg");
+  background-image: url("../img/main-page-background-edited.jpg");
   gap: 1.6em;
-  background-color: grey;
-  background-blend-mode:multiply;
+  
   width: 100%;
   height: auto;
 }
@@ -388,6 +387,7 @@ a::after {
   background: #ddd;
   cursor: pointer;
   text-decoration: none;
+  margin-bottom: 15px;
 }
 
 .home-btn:hover {
@@ -541,3 +541,54 @@ img {
   background: #c7d9f6;
 }
 /* End of styling fleet images */
+
+.home-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home-smalltxt {
+  margin-top: 15px;
+  color: white;
+  font-size: 1.4em;
+}
+
+.home-smalllist {
+  color: white;
+  font-size: 1.2em;
+}
+
+.first-row {
+  margin-top: 60px;
+}
+
+.home-book-btn {
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  width:170px;
+  height: 70px;
+  border-radius: 10em;
+  border: 3px solid rgb(0, 0, 0);
+  outline: none;
+  background: #746abd;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.home-book-btn:hover {
+  background: #c7d9f6;
+  color: black;
+}
+
+.img-home {
+  margin-top: 50px;
+}
+
+@media (max-width: 875px) {
+  .img-home {
+    display: none;
+  }
+}
