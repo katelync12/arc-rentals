@@ -648,6 +648,10 @@ img {
     overflow-x:hidden;
   }
 
+  .faq-page {
+    margin-top: 200px;
+  }
+
 }
 
 .faq-page {
